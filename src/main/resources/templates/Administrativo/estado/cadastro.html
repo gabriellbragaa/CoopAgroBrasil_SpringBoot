@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Produto Agro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h2>Cadastro de Produto Agro</h2>
+    <form th:action="@{/agro/cadastrar}" method="post">
+        <div class="mb-3">
+            <label for="title" class="form-label">Título</label>
+            <input type="text" class="form-control" id="title" name="title" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="image" class="form-label">URL da Imagem</label>
+            <input type="text" class="form-control" id="image" name="image" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="price" class="form-label">Preço</label>
+            <input type="number" class="form-control" id="price" name="price" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+</div>
+</body>
+</html>
