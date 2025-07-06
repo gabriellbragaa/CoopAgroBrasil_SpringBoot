@@ -1,3 +1,5 @@
+// (./agro/AgroResponseDTO.java)
+
 package com.example.spring.agro;
 
 public record AgroResponseDTO(Long id, String title, String image, Integer price ) {

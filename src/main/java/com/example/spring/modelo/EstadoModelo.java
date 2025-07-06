@@ -1,3 +1,6 @@
+// (./modelo/EstadoModelo.java)
+
+
 package com.example.spring.modelo;
 
 import java.io.Serializable;
@@ -16,7 +19,7 @@ import lombok.Setter;
 @Setter
 
 
-public class estadoModelo implements Serializable {
+public class EstadoModelo implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
